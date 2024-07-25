@@ -1,8 +1,19 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Cloudlink Docs
+description: This site documents the usage of Cloudlink and it's extensions.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://abichinger.github.io/odoo_cloud_link_docs/17.0/
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Docs on Github: https://github.com/abichinger/odoo_cloud_link_docs
+
+content:
+  version: "17.0"
+  module_name:
+    base: Cloudlink - Storage
+    gdrive: Cloudlink - Google Drive
+    attach: Cloudlink - URL Attachment
+  technical_name:
+    base: cloud_link
+    gdrive: cloud_link_gdrive
+    attach: cloud_link_attach
