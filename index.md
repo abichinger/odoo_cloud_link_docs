@@ -36,5 +36,5 @@ The module supports the following drive types:
 
 [File Explorer]: {% link explorer.md %}
 [Sync Jobs]: {% link sync.md %}
-[Access Rights]: {% link security/access.md %}
+[Access Rights]: {% link common_drive.md %}#allowed-groups
 [URL Attachments]: {% link url-attachment.md %}

@@ -7,6 +7,22 @@ url: https://abichinger.github.io/odoo_cloud_link_docs/17.0/
 aux_links:
   Docs on Github: https://github.com/abichinger/odoo_cloud_link_docs
 
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
 content:
   version: "17.0"
   module_name:

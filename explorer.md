@@ -10,7 +10,7 @@ nav_order: 10
 
 The integrated File Explorer makes it easy to manage your files and folders. You will have access to all your mounted drives and can switch between them.
 
-![](./assets/explorer.png)
+![File Manager](./assets/explorer.png)
 
 ## Supported operations
 
