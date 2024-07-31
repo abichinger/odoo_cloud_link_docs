@@ -9,7 +9,7 @@ parent: Drives
 {% include module.md module="base" %}
 
 Attachment Drives help you organize your attachments, by allowing you to create a meaningful folder structure for them. <br />
-Set up a [Sync Job], if you want to backup your attachments.
+You can use a [Sync Job] to backup your attachments.
 
 {: .note }
 An Attachment Drive is always **read-only**
@@ -28,12 +28,15 @@ An `Attachment Folders` has a path and a filter to determine which attachments s
 The path of the `Attachment Folder`. The path can contain placeholders.
 
 #### Examples:
-- `/projects/{create_date.year}` - group files by year
-- `/invoices/{res.invoice_partner_display_name}` - group files by the name of the partner
+- `/projects/{create_date.year}` - group files by year <br />
+  Results: `/projects/2024`, `/projects/2023`, ... 
+- `/invoices/{res.invoice_partner_display_name}` - group files by the name of the partner <br />
+  Results: `/invoices/Deco Addict`, `/invoices/Wood Corner`, ...
 
 A list of all available placeholder variables can be found under the `Help` tab.
 
 ![Create Attachment Folder](../assets/create_attachment_folder.png)
+![Attachment Folder Help](../assets/attachment_folder_help.png)
 
 ### Attachment Filter
 
@@ -48,6 +51,10 @@ To simplify the setup the module provides some `Attachment Folder` presets.
 
 ![All Preset](../assets/preset_all.png)
 
+### Employees
+
+![Employees Preset](../assets/preset_employees.png)
+
 ### Invoices
 
 ![Invoices Preset](../assets/preset_invoices.png)
@@ -55,6 +62,14 @@ To simplify the setup the module provides some `Attachment Folder` presets.
 ### Channel Messages
 
 ![Channel Messages Preset](../assets/preset_discuss.png)
+
+### Project Tasks
+
+![All Preset](../assets/preset_project_tasks.png)
+
+### Project Updates
+
+![All Preset](../assets/preset_project_updates.png)
 
 
 ---
