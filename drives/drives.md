@@ -13,6 +13,6 @@ permalink: /drives
 ![Cloudlink Drives](../assets/drives.png)
 
 {: .note }
-Some drives require a Cloudlink extension module. Select a drive type for more information.
+Some drives require a Cloudlink extension. Select a drive type for more information.
 
 [Cloudlink]: {% link index.md %}

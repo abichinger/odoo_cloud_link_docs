@@ -6,9 +6,11 @@ nav_order: 0
 
 # Introduction
 
-{% include store_link.md module="base" %} is a module to connect different cloud storages to Odoo, manage your attachments and sync your data to the cloud.
+{% include store_link.md module="base" %} is a module to connect different cloud storages to Odoo, manage your attachments and sync your data between drives.
 
 In other words, the module let's you integrate and manage different types of data storages. Each data storage gets mounted like a drive on a PC.
+
+![Cloudlink Screenshot](assets/cloud_link.png)
 
 The module supports the following drive types:
 
