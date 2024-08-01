@@ -12,8 +12,9 @@ Sync Jobs can be used to automatically copy a directory from one drive to anothe
 
 ![Sync Job List](assets/sync_jobs.png)
 
-{: .highlight }
-The selected drives cannot be accessed while a Sync Job is running.
+{: .note }
+With the default settings, Odoo kills workers after 120 seconds. 
+For long Sync Jobs you need to increase [`limit-time-real`](https://www.odoo.com/documentation/{{site.content.version}}/developer/reference/cli.html#cmdoption-odoo-bin-limit-time-real).
 
 ## Sync Jobs Settings
 
