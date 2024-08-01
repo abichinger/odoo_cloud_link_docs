@@ -20,7 +20,7 @@ Created attachments link to the file on the drive without making a copy.
 >   - the linked file does no longer exist
 > - Renaming the drive has no effect on the attachment
 
-# Create a Cloudlink Attachment
+## Create a Cloudlink Attachment
 
 <video width="100%" controls>
   <source src="assets/url_attachment.mp4" type="video/mp4">

@@ -13,6 +13,11 @@ Cloudlink would not have been possible without these awesome projects:
 - [Vuefinder](https://github.com/n1crack/vuefinder) - [MIT license](https://github.com/n1crack/vuefinder/blob/e7c333b1d75510309239f51a2913f90963b99a0a/LICENSE)
 - [munch](https://github.com/Infinidat/munch) - [MIT license](https://github.com/Infinidat/munch/blob/d6a54cac0e0d913e27f7cf59064d0e4c13f82e27/LICENSE.txt)
 
+This documentation was written using:
+
+- [just-the-docs](https://github.com/just-the-docs/just-the-docs) - [MIT license](https://github.com/just-the-docs/just-the-docs/blob/f3b947d64d611bfef0d02a3297222d3f5bf47816/LICENSE.txt)
+- [jekyll](https://github.com/jekyll/jekyll) - [MIT license](https://github.com/jekyll/jekyll/blob/3d5e86eb0894a4fc950939c631623c5ee2c617c8/LICENSE)
+
 ## Assets
 
 ### Icons
