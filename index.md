@@ -26,10 +26,11 @@ The module supports the following drive types:
 - **[Access Rights]** <br/>Restrict access to certain user groups, configurable for each drive.
 - **[URL Attachments]** <br/>Attach files directly from a Cloudlink Drive.
 
+{% comment %}
 ## Glossary
 
 **Drive** - a Cloudlink data storage
-
+{% endcomment %}
 ----
 
 [Local]: {% link drives/local.md %}
