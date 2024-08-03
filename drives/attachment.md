@@ -8,16 +8,16 @@ parent: Drives
 
 {% include module.md module="base" %}
 
-Attachment Drives help you organize your attachments, by allowing you to create a meaningful folder structure for them. <br />
-You can use a [Sync Job] to backup your attachments.
+Attachment Drives help you organize your attachments by allowing you to create a meaningful folder structure for them. <br />
+You can use a [Sync Job] to back up your attachments.
 
 {: .note }
 An Attachment Drive is always **read-only**
 
 ## Attachment Drive Settings
 
-The Settings of an Attachment Drive is a list of `Attachment Folders`.
-An `Attachment Folders` has a path and a filter to determine which attachments should be included.
+The Settings of an Attachment Drive consist of a list of `Attachment Folders`.
+An `Attachment Folder` has a path and a filter to determine which attachments should be included.
 
 ![Attachment Drive Settings](../assets/attachment_drive_settings.png)
 

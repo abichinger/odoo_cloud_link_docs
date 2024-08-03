@@ -12,17 +12,17 @@ The integrated File Explorer makes it easy to manage your files and folders. You
 
 ![File Manager](./assets/explorer.png)
 
-## Supported operations
+## Supported Operations
 
 - Create new files/folders
-- Rename
-- Delete
+- Rename files/folders
+- Delete files/folders
 - Download/Upload files
 
 ## Features
 
 - Breadcrumb links
 - Image thumbnails
-- List and Grid view
+- List and grid view
 - Drag & drop support
 - Pinned folders

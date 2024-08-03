@@ -8,7 +8,7 @@ parent: Drives
 
 {% include module.md module="base" %}
 
-A Local Drive connects a directory of your system to Odoo.
+A Local Drive connects a directory from your system to Odoo.
 
 ## Local Drive Settings
 
