@@ -30,10 +30,12 @@ content:
     base: Cloudlink - Storage
     gdrive: Cloudlink - Google Drive
     attach: Cloudlink - URL Attachment
+    sharepoint: Cloudlink - SharePoint & OneDrive
   technical_name:
     base: cloud_link
     gdrive: cloud_link_gdrive
     attach: cloud_link_attach
+    sharepoint: cloud_link_sharepoint
 
 ga_tracking: G-N51XN1LWNY
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
