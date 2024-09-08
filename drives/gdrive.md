@@ -11,7 +11,7 @@ parent: Drives
 {% include store_link.md module="gdrive" %} allows you to connect Odoo with Google Drive. 
 This extension is ideal if you want to back up your documents to the cloud.
 
-![Google Drive](../assets/gdrive_settings.png)
+![Google Drive](../assets/gdrive_hero.png)
 
 ## Setup
 
@@ -32,6 +32,8 @@ A [service account key] in JSON format.
 The id of a shared drive.
 
 ![Root ID](../assets/root_id.png)
+
+![Google Drive](../assets/gdrive_settings.png)
 
 [service account]: https://cloud.google.com/iam/docs/service-accounts-create
 [service account key]: https://cloud.google.com/iam/docs/keys-create-delete?hl=en#creating
