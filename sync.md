@@ -8,7 +8,7 @@ nav_order: 40
 
 {% include module.md module="base" %}
 
-Sync Jobs can be used to automatically copy a directory from one drive to another. A [Cloudlink Administrator] can also manually trigger the job. 
+Sync Jobs can be used to automatically copy a directory from one drive to another. The synchronization occurs automatically at the specified interval (e.g. every 24 hours). A [Cloudlink Administrator] can also manually trigger the job. 
 
 ![Sync Job List](assets/sync_jobs.png)
 

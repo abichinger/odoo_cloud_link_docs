@@ -34,7 +34,9 @@ The redirect URI should be `https://<your_odoo_domain>/cl_link_sharepoint/token`
 
 ![Web Redirect URI](../assets/sharepoint_redirect_uri.png)
 
+4. Create a new Cloudlink Drive
 
+![client credentials](../assets/sharepoint_auth_flow.png)
  
 ### [OAuth 2.0 client credentials flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow)
 
@@ -45,8 +47,11 @@ The redirect URI should be `https://<your_odoo_domain>/cl_link_sharepoint/token`
   - `Files.ReadWrite.All`
   - `Sites.ReadWrite.All`
 
-
 ![API permissions](../assets/sharepoint_api_permissions.png)
+
+4. Create a new Cloudlink Drive
+
+![client credentials](../assets/sharepoint_credential_flow.png)
 
 ## OneDrive/SharePoint Drive Settings
 
@@ -73,6 +78,9 @@ Client credentials
 ### Tenant
 
 Directory (tenant) ID
+
+{: .note }
+Use "**consumers**" to access the OneDrive of a personal Microsoft account 
 
 ### Redirect URI
 
