@@ -27,4 +27,4 @@ Created attachments link to the file on the drive without making a copy.
 Your browser does not support the video tag.
 </video>
 
-[Cloudlink Drive]: {% link drives/drives.md %}
+[Cloudlink Drive]: {% link drives.md %}

@@ -34,4 +34,4 @@ A list of groups, who can access the drive. Users only see the drives they have 
 
 ---
 
-[Cloudlink Drives]: {% link drives/drives.md %}
+[Cloudlink Drives]: {% link drives.md %}

@@ -21,7 +21,7 @@ The Cloudlink Checkbox is located in the `EXTRA RIGHTS` section of a user.
 ---
 
 [Cloudlink]: {% link index.md %}
-[Drives]: {% link drives/drives.md %}
+[Drives]: {% link drives.md %}
 [Sync Jobs]: {% link sync.md %}
 
 
