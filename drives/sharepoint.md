@@ -94,6 +94,9 @@ The user's ID
 
 The ID of a SharePoint site
 
+{: .note }
+You can use [Microsoft Graph Explorer](https://graph.microsoft.com/v1.0/sites/root:/sites/SITE_NAME) to find the ID of your SharePoint site. 
+
 ### Drive ID
 
 The id of a drive.

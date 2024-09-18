@@ -17,7 +17,8 @@ The module supports the following drive types:
 - **[Local]** - Mount a local folder of the Odoo server
 - **[Attachment]** - Drive to organize attachments
 - **[Google Drive]**
-- More drives coming soon: **SharePoint**, **Dropbox**, **SFTP**, ...
+- **[SharePoint & OneDrive]**
+- More drives coming soon: **Dropbox**, **SFTP**, ...
 
 ## Features
 
@@ -36,6 +37,7 @@ The module supports the following drive types:
 [Local]: {% link drives/local.md %}
 [Attachment]: {% link drives/attachment.md %}
 [Google Drive]: {% link drives/gdrive.md %}
+[SharePoint & OneDrive]: {% link drives/sharepoint.md %}
 
 [File Explorer]: {% link explorer.md %}
 [Sync Jobs]: {% link sync.md %}
