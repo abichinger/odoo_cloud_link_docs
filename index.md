@@ -18,7 +18,8 @@ The module supports the following drive types:
 - **[Attachment]** - Drive to organize attachments
 - **[Google Drive]**
 - **[SharePoint & OneDrive]**
-- More drives coming soon: **Dropbox**, **SFTP**, ...
+- **[SFTP]** - Secure File Transfer Protocol
+- More drives coming soon: **WebDav**, **Dropbox**, **S3FS** ...
 
 ## Features
 
@@ -38,6 +39,7 @@ The module supports the following drive types:
 [Attachment]: {% link drives/attachment.md %}
 [Google Drive]: {% link drives/gdrive.md %}
 [SharePoint & OneDrive]: {% link drives/sharepoint.md %}
+[SFTP]: {% link drives/sftp.md %}
 
 [File Explorer]: {% link explorer.md %}
 [Sync Jobs]: {% link sync.md %}
