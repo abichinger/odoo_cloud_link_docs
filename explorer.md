@@ -18,9 +18,12 @@ The integrated File Explorer makes it easy to manage your files and folders. You
 - Rename files/folders
 - Delete files/folders
 - Download/Upload files
+- Archive/Unarchive files
+- Download Archive
 
 ## Features
 
+- File preview (Images, PDF and Text files)
 - Breadcrumb links
 - Image thumbnails
 - List and grid view
