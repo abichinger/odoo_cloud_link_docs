@@ -26,6 +26,7 @@ The module supports the following drive types:
 - **[File Explorer]** <br/>Manage files and folders directly from the web interface.
 - **[Sync Jobs]** <br/>Schedule cron jobs to synchronize files and folders between drives. 
 - **[Access Rights]** <br/>Restrict access to certain user groups, configurable for each drive.
+- **[Database Backup]** <br/>Perform automatic database backups.
 - **[URL Attachments]** <br/>Attach files directly from a Cloudlink Drive.
 
 {% comment %}
@@ -44,4 +45,5 @@ The module supports the following drive types:
 [File Explorer]: {% link explorer.md %}
 [Sync Jobs]: {% link sync.md %}
 [Access Rights]: {% link common_drive.md %}#allowed-groups
+[Database Backup]: {% link db-backup.md %}
 [URL Attachments]: {% link url-attachment.md %}
