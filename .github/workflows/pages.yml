@@ -28,9 +28,18 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        site:
+          - version: '17.0'
+            branch: '17.0'
+          - version: '18.0'
+            branch: 'main'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.site.branch }}
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -42,9 +51,23 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build -d _site/18.0 --baseurl "${{ steps.pages.outputs.base_path }}/18.0"
+        run: bundle exec jekyll build -d _site/${{ matrix.site.version }} --baseurl "${{ steps.pages.outputs.base_path }}/${{ matrix.site.version }}"
         env:
           JEKYLL_ENV: production
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.site.version }}
+          path: _site/${{ matrix.site.version }}
+
+  merge:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      # Download all artifacts from build
+      - uses: actions/download-artifact@v4
+        with:
+          path: _site
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
@@ -55,7 +78,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}/18.0
     runs-on: ubuntu-latest
-    needs: build
+    needs: merge
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
