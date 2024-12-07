@@ -33,6 +33,7 @@ content:
     sharepoint: Cloudlink - SharePoint & OneDrive
     sftp: Cloudlink - SFTP (SSH File Transfer Protocol)
     db: Cloudlink - Database
+    dropbox: Cloudlink - Dropbox
   technical_name:
     base: cloud_link
     gdrive: cloud_link_gdrive
@@ -40,6 +41,7 @@ content:
     sharepoint: cloud_link_sharepoint
     sftp: cloud_link_sftp
     db: cloud_link_db
+    dropbox: cloud_link_dropbox
 
 ga_tracking: G-N51XN1LWNY
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
