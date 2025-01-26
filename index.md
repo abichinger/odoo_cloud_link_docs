@@ -16,10 +16,11 @@ The module supports the following drive types:
 
 - **[Local]** - Mount a local folder of the Odoo server
 - **[Attachment]** - Drive to organize attachments
+- **[Dropbox]**
 - **[Google Drive]**
 - **[SharePoint & OneDrive]**
 - **[SFTP]** - Secure File Transfer Protocol
-- More drives coming soon: **WebDav**, **Dropbox**, **S3FS** ...
+- More drives coming soon: **WebDav**, **S3FS** ...
 
 ## Features
 
@@ -28,6 +29,7 @@ The module supports the following drive types:
 - **[Access Rights]** <br/>Restrict access to certain user groups, configurable for each drive.
 - **[Database Backup]** <br/>Perform automatic database backups.
 - **[URL Attachments]** <br/>Attach files directly from a Cloudlink Drive.
+- **Email notifications** <br/>Receive an email notification when a job fails.
 
 {% comment %}
 ## Glossary
@@ -38,6 +40,7 @@ The module supports the following drive types:
 
 [Local]: {% link drives/local.md %}
 [Attachment]: {% link drives/attachment.md %}
+[Dropbox]: {% link drives/dropbox.md %}
 [Google Drive]: {% link drives/gdrive.md %}
 [SharePoint & OneDrive]: {% link drives/sharepoint.md %}
 [SFTP]: {% link drives/sftp.md %}
