@@ -28,4 +28,20 @@ Specifies whether the job is executed automatically.
 
 Run job every x Minutes/Hours/Days/Weeks/Months
 
+### Next Execution Date
+
+Next planned execution date for this job
+
+### Notification Type
+
+Options:
+
+- None - no notification
+- Email - Send email notificaiton on job failure
+
+### Recipient
+
+Recipient of the email
+
+
 [Cloudlink Administrator]: {% link security/admin.md %}
