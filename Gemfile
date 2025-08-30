@@ -10,3 +10,5 @@ gem "webrick", "~> 1.8"
 
 # https://github.com/jekyll/jekyll/issues/9545#issuecomment-1941545195
 gem "json"
+
+gem "csv"
