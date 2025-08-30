@@ -12,3 +12,5 @@ gem "webrick", "~> 1.8"
 gem "json"
 
 gem "csv"
+
+gem "nokogiri"
