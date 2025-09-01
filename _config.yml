@@ -35,6 +35,7 @@ content:
     db: Cloudlink - Database
     dropbox: Cloudlink - Dropbox
     portal: Cloudlink - File Sharing
+    s3: Cloudlink - Amazon S3
   technical_name:
     base: cloud_link
     gdrive: cloud_link_gdrive
@@ -44,6 +45,7 @@ content:
     db: cloud_link_db
     dropbox: cloud_link_dropbox
     portal: cloud_link_portal
+    s3: cloud_link_s3
 
 ga_tracking: G-N51XN1LWNY
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
