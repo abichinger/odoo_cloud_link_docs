@@ -51,7 +51,7 @@ The filename can contain the following placeholders:
 - `month` - Month as a zero-padded number
 - `year` - Year with century
 
-Default: `{db_name}-{day}{month}{year}` 
+Default: `{db_name}-{day}{month}{year}`
 
 ### Format
 
@@ -71,17 +71,16 @@ Run job every x Minutes/Hours/Days/Weeks/Months
 
 Next planned execution date for this job
 
-### Notification Type
+### Backup retention
 
-Options:
+Configure how many backups to keep:
 
-- None - no notification
-- Email - Send email notificaiton on job failure
+- **Keep all**: Keep all your backups.
+- **Number of backups to keep**: Specify how many backups should be retained. Older backups will be deleted automatically.
 
-### Recipient
+## Notifications
 
-Recipient of the email
-
+Notifications about backup failures are now sent via the Odoo chatter (followers/messages). To receive notifications, add yourself as a follower to the backup job.
 
 [cloud storages]: {% link drives.md %}
 [Cloudlink Drive]: {% link drives.md %}
