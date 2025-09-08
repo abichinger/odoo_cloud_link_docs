@@ -8,6 +8,8 @@ nav_order: 25
 
 All [Cloudlink Drives] have the following options in common.
 
+![Common Drive Settings](assets/common_settings.png)
+
 ### Name
 
 The name of the drive.
@@ -24,13 +26,17 @@ Makes a drive read-only. Some drive types are always read-only.
 
 If a drive is active, it is mounted by the system. Otherwise, the drive is inaccessible.
 
-### Allowed Groups
+### Groups with access
 
-A list of groups, who can access the drive. Users only see the drives they have access to. A [`Cloudlink Administrator`]({% link security/admin.md %}) is always granted access.
+A list of groups, who can access the drive.
 
-## Screenshot
+### Users with access
 
-![Common Drive Settings](assets/common_settings.png)
+A list of users, who can access the drive.
+
+## Access & Security
+
+Users only see the drives they have access to. A [`Cloudlink Administrator`]({% link security/admin.md %}) is always granted access.
 
 ---
 
