@@ -25,6 +25,7 @@ The module supports the following drive types:
 ## Features
 
 - **[File Explorer]** <br/>Manage files and folders directly from the web interface.
+- **[Filestore]** <br/>Store attachments (files) directly on a Cloudlink Drive
 - **[Shares]** <br/>Share files and folders with your partners.
 - **[Sync Jobs]** <br/>Schedule cron jobs to synchronize files and folders between drives.
 - **[Access Rights]** <br/>Restrict access to certain user groups, configurable for each drive.
@@ -52,3 +53,4 @@ The module supports the following drive types:
 [Database Backup]: {% link db-backup.md %}
 [URL Attachments]: {% link url-attachment.md %}
 [Shares]: {% link shares.md %}
+[Filestore]: {% link filestore.md %}
