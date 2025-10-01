@@ -6,7 +6,7 @@ nav_order: 3
 
 # Demo
 
-Test Cloudlink on <a href="https://odoo-demo.duckdns.org/web#action=cloud_link.action_drive" target="_blank">odoo-demo.duckdns.org</a>
+Test Cloudlink on <a href="https://odoo19-cloudlink.504050.xyz/odoo/cloudlink" target="_blank">odoo19-cloudlink.504050.xyz</a>
 
 {: .note }
 The demo instance is reset every few hours. During a restart the demo is temporarily unavailable.
@@ -25,14 +25,24 @@ These accounts are available for you to try Cloudlink.
     </thead>
     <tbody>
         <tr>
-            <td>admin</td>
+            <td scope="row">admin</td>
             <td>admin</td>
             <td>Administrator</td>
         </tr>
         <tr>
+            <td scope="row">cloudlink</td>
+            <td>cloudlink</td>
+            <td>Cloudlink Administrator</td>
+        </tr>
+        <tr>
+            <td scope="row">demo</td>
             <td>demo</td>
-            <td>demo</td>
-            <td>User</td>
+            <td>Internal User</td>
+        </tr>
+        <tr>
+            <td scope="row">portal</td>
+            <td>portal</td>
+            <td>Portal User</td>
         </tr>
     </tbody>
 </table>
