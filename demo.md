@@ -6,7 +6,7 @@ nav_order: 3
 
 # Demo
 
-Test Cloudlink on <a href="https://odoo-demo.duckdns.org/web#action=cloud_link.action_drive" target="_blank">odoo-demo.duckdns.org</a>
+Test Cloudlink on <a href="https://odoo-demo.504050.xyz/web#action=cloud_link.action_drive" target="_blank">odoo-demo.504050.xyz</a>
 
 {: .note }
 The demo instance is reset every few hours. During a restart the demo is temporarily unavailable.
