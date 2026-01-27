@@ -16,33 +16,44 @@ Attachments are stored on the configured drive and path. You can restrict which 
 
 ## How it Works
 
-- When a user uploads an attachment (e.g., in chatter, documents, etc.), Cloudlink checks if a matching Filestore is configured for the model.
-- If a match is found, the file is uploaded to the specified cloud drive and path.
-- The attachment is stored as a URL in Odoo, pointing to the file on the cloud drive.
-- Files can be accessed or downloaded via secure links.
+- When a user uploads an attachment, Cloudlink searches for a matching **Storage Template** within your active Filestores.
+- If a match is found for the record's model, the file is uploaded to the cloud drive using the path defined in the template.
+- The attachment is stored as a URL in Odoo.
+- If **Bidirectional Sync** is enabled, files added directly to the cloud folder are automatically synced back to Odoo when the record is accessed.
 
-### Folder Structure
+### Storage Templates & Folder Structure
 
-Files are organized by model and record. The default structure is:
+Storage Templates define how files are organized on the drive. You can define specific templates for different Odoo models or a default template for all other models.
 
-```
-/<model>/<record_id>/<attachment_id>_<filename>
-```
+The **Directory** field in a template supports dynamic placeholders to create a structured hierarchy.
 
-- `<model>`: The technical name of the Odoo model (e.g., `res.partner`, `discuss.channel`).
-- `<record_id>`: The ID of the record the attachment belongs to.
-- `<attachment_id>`: The ID of the attachment record.
-- `<filename>`: The original file name.
+**Supported Placeholders:**
+
+- `{res_model}`: The technical model name (Required, e.g., `res.partner`).
+- `{id}`: The record ID (Required).
+- `{FIELD_NAME}`: Any field on the record (e.g., `{name}`, `{create_date.year}`, `{company_id.name}`).
+
+> **Note:** The directory template must always contain the `{id}` placeholder to ensure files are associated with the correct record.
 
 **Example:**
 
-A file attached to a partner with ID 42 and attachment ID 99, named `contract.pdf`, will be stored as:
+With a directory template of `/{res_model}/{create_date.year}/{name}`, a file attached to a partner named "Azure Interior" created in 2024 would be stored at:
 
 ```
-/res.partner/42/99_contract.pdf
+/res.partner/2024/Azure Interior/99_contract.pdf
 ```
 
-This structure ensures files are grouped by model and record, making it easy to locate and manage attachments on the drive.
+The filename is automatically prefixed with the attachment ID to prevent conflicts.
+
+### Bidirectional Sync
+
+If **Bidirectional Sync** is enabled on a Storage Template, Cloudlink will monitor the folder associated with a record.
+
+- When a user opens a record in Odoo, Cloudlink checks the corresponding folder on the drive.
+- Any new files found in that folder are automatically imported into Odoo as attachments.
+- A notification is sent to the user upon completion.
+
+This allows for seamless workflows where files are dropped into a folder (e.g., via FTP or shared drive) and immediately appear in Odoo.
 
 ## Filestore Settings
 
@@ -62,11 +73,15 @@ The [Cloudlink Drive] where attachments will be stored.
 
 ### Path
 
-The folder/path on the drive where attachments will be saved (e.g., `/attachments`).
+The root folder on the drive for this Filestore (e.g., `/attachments`). All Storage Template paths are relative to this root.
 
-### Restrict models
+### Storage Templates
 
-Limit this Filestore to specific Odoo models (e.g., only for `res.partner` or `discuss.channel`). Leave empty to allow all models.
+Define one or more templates to map Odoo models to directory structures.
+
+- **Model**: Restrict the template to a specific model. Leave empty to apply to all other models.
+- **Directory**: The folder path pattern (see Folder Structure).
+- **Bidirectional**: Enable two-way sync for this model.
 
 ### Sequence
 
