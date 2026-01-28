@@ -1,56 +1,51 @@
 ---
 title: Home
-layout: home
-nav_order: 0
+layout: default
+nav_order: 1
 ---
 
-# Introduction
+# Cloudlink Documentation
 
-{% include store_link.md module="base" %} is a module to connect different cloud storages to Odoo, manage your attachments, and sync your data between drives.
+Welcome to the documentation for **Cloudlink**. Cloudlink is a comprehensive file management and storage solution for Odoo, allowing you to integrate various cloud providers and manage your files directly within the Odoo interface.
 
-In other words, the module lets you integrate and manage different types of data storages. Each data storage gets mounted like a drive on a PC.
+[Go to Demo]
 
 ![Cloudlink Screenshot](assets/cloud_link.png)
 
-The module supports the following drive types:
+## Overview
 
-- **[Local]** - Mount a local folder of the Odoo server
-- **[Attachment]** - Drive to organize attachments
-- **[Dropbox]**
-- **[Google Drive]**
-- **[SharePoint & OneDrive]**
-- **[SFTP]** - Secure File Transfer Protocol
-- More drives coming soon: **WebDav**, **S3FS** ...
+Cloudlink enables you to:
+- **Mount Cloud Storages**: Connect [Google Drive], [Dropbox], [SharePoint & OneDrive], [Amazon S3], and [SFTP] as drives in Odoo.
+- **Manage Files**: Use the integrated [File Explorer] to browse, upload, download, and organize files.
+- **[Filestore]**: Use cloud drives as the backend storage for Odoo attachments (bidirectional sync).
+- **Sync**: [Synchronize] files between different drives.
+- **Backup**: Automatically [backup your Odoo database] to any mounted drive.
+- **Share**: [Share files and folders] with external partners via the portal.
 
-## Features
+## Modules
 
-- **[File Explorer]** <br/>Manage files and folders directly from the web interface.
-- **[Filestore]** <br/>Store attachments (files) directly on a Cloudlink Drive
-- **[Shares]** <br/>Share files and folders with your partners.
-- **[Sync Jobs]** <br/>Schedule cron jobs to synchronize files and folders between drives.
-- **[Access Rights]** <br/>Restrict access to certain user groups, configurable for each drive.
-- **[Database Backup]** <br/>Perform automatic database backups.
-- **[URL Attachments]** <br/>Attach files directly from a Cloudlink Drive.
-- **Email notifications** <br/>Receive an email notification when a job fails.
+Cloudlink consists of several modules. The core module provides the file manager and basic drive types, while extensions add support for specific providers or features.
 
-{% comment %}
-## Glossary
+| Feature / Provider | Module |
+| :--- | :--- |
+| **Core (File Explorer, Attachment, Local)** | `cloud_link` |
+| **URL Attachments** | `cloud_link_attach` |
+| **Database Backup** | `cloud_link_db` |
+| **Dropbox** | `cloud_link_dropbox` |
+| **Google Drive** | `cloud_link_gdrive` |
+| **File Sharing (Portal)** | `cloud_link_portal` |
+| **Amazon S3** | `cloud_link_s3` |
+| **SFTP** | `cloud_link_sftp` |
+| **SharePoint & OneDrive** | `cloud_link_sharepoint` |
 
-**Drive** - a Cloudlink data storage
-{% endcomment %}
-----
-
-[Local]: {% link drives/local.md %}
-[Attachment]: {% link drives/attachment.md %}
-[Dropbox]: {% link drives/dropbox.md %}
+[Go to Demo]: {% link demo.md %}
 [Google Drive]: {% link drives/gdrive.md %}
+[Dropbox]: {% link drives/dropbox.md %}
 [SharePoint & OneDrive]: {% link drives/sharepoint.md %}
+[Amazon S3]: {% link drives/s3.md %}
 [SFTP]: {% link drives/sftp.md %}
-
-[File Explorer]: {% link explorer.md %}
-[Sync Jobs]: {% link sync.md %}
-[Access Rights]: {% link common_drive.md %}#allowed-groups
-[Database Backup]: {% link db-backup.md %}
-[URL Attachments]: {% link url-attachment.md %}
-[Shares]: {% link shares.md %}
-[Filestore]: {% link filestore.md %}
+[File Explorer]: {% link how-to/explorer.md %}
+[Synchronize]: {% link how-to/sync.md %}
+[backup your Odoo database]: {% link how-to/db-backup.md %}
+[Share files and folders]: {% link how-to/shares.md %}
+[Filestore]: {% link how-to/filestore.md %}

@@ -1,12 +1,14 @@
 ---
 title: Troubleshooting
 layout: default
-nav_order: 55
+nav_order: 5
 ---
 
 # Troubleshooting
 
-## You get an error while activating the module
+## Installation Issues
+
+### Error activating the module (External Environment)
 
 When installing a Cloudlink module, you might encounter an error similar to:
 
@@ -14,17 +16,27 @@ When installing a Cloudlink module, you might encounter an error similar to:
 subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'pip', 'install', 'fs==2.4.16']' returned non-zero exit status 1          
 ```
 
-*The process failed to install the Python package `fs`*.
+**Cause:** The module attempts to auto-install Python dependencies (`fs`, etc.) via pip, but your Python environment is "externally managed" (common in modern Linux distributions) or restricted.
 
-Some Cloudlink modules depend on Python packages. These packages are automatically installed when the Cloudlink module gets activated.
-The error above can occur, when `pip` tries to install the dependencies into an [externally managed environment](https://www.baeldung.com/linux/pip-fix-externally-managed-environment-error) (e.g. /usr/lib/python3).
+**Solution:**
+The recommended solution is to run Odoo within a **virtual environment**.
+1. Create a virtual environment: `python3 -m venv venv`
+2. specific to your OS, activate it.
+3. Install Odoo requirements.
+4. Restart Odoo.
 
-The **recommended solution** is to create a virtual environment: [https://docs.python.org/3/library/venv.html#creating-virtual-environments](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
+<!-- Alternatively, you can manually install the required libraries listed in the module's `requirements.txt`. -->
 
-## You get an error when you try to upgrade a module
+## Upgrade Issues
 
-Make sure to also upgrade the base module ([`cloud_link`]), when you want to upgrade a Cloudlink extension (e.g. [`cloud_link_gdrive`]).
-In addition, the installed Cloudlink modules should all have the same version.
+### Error upgrading a module
+
+**Symptom:** Inconsistent behavior or errors after updating a Cloudlink extension.
+
+**Solution:**
+Ensure version consistency.
+1.  Always upgrade the base module ([`cloud_link`]) when you upgrade any extension (e.g., [`cloud_link_gdrive`]).
+2.  Ensure all installed Cloudlink modules are on the same version number.
 
 [`cloud_link`]: https://apps.odoo.com/apps/modules/{{site.content.version}}/cloud_link
 [`cloud_link_gdrive`]: {% link drives/gdrive.md %}

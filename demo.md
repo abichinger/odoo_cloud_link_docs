@@ -1,38 +1,25 @@
 ---
 title: Demo
 layout: default
-nav_order: 3
+nav_order: 2
 ---
 
 # Demo
 
-Test Cloudlink on <a href="https://odoo-demo.504050.xyz/web#action=cloud_link.action_drive" target="_blank">odoo-demo.504050.xyz</a>
+You can try out Cloudlink on our public demo instance.
+
+[Open Demo Instance](https://odoo19-cloudlink.504050.xyz/odoo/cloudlink){: .btn .btn-primary target="_blank" }
 
 {: .note }
-The demo instance is reset every few hours. During a restart the demo is temporarily unavailable.
+The demo instance is reset every few hours.
 
-## Demo users
+## Demo Credentials
 
-These accounts are available for you to try Cloudlink.
+Use the following credentials to log in:
 
-<table>
-    <thead>
-        <tr>
-            <th>Username</th>
-            <th>Password</th>
-            <th>Role</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>admin</td>
-            <td>admin</td>
-            <td>Administrator</td>
-        </tr>
-        <tr>
-            <td>demo</td>
-            <td>demo</td>
-            <td>User</td>
-        </tr>
-    </tbody>
-</table>
+| Username | Password | Role |
+| :--- | :--- | :--- |
+| admin | admin | Administrator |
+| cloudlink | cloudlink | Cloudlink Administrator |
+| demo | demo | Internal User |
+| portal | portal | Portal User |

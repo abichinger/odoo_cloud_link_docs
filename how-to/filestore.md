@@ -1,10 +1,13 @@
 ---
-title: Filestore
+title: Set up a Filestore
+parent: How-to Guides
 layout: default
-nav_order: 32
+nav_order: 2
+redirect_from:
+  - /filestore
 ---
 
-# Filestore
+# Set up a Filestore
 
 {% include module.md module="base" %}
 
@@ -12,7 +15,7 @@ The Filestore feature allows you to store Odoo attachments (files) directly on a
 
 Attachments are stored on the configured drive and path. You can restrict which Odoo models use the Filestore. When enabled, attachments for the selected models will be uploaded to the cloud drive and accessible via secure URLs.
 
-![Filestore List](assets/filestore_list.png)
+![Filestore List](../assets/filestore_list.png)
 
 ## How it Works
 
@@ -29,7 +32,7 @@ The **Directory** field in a template supports dynamic placeholders to create a 
 
 **Supported Placeholders:**
 
-- `{res_model}`: The technical model name (Required, e.g., `res.partner`).
+- `{res_model}`: The technical model name (e.g., `res.partner`).
 - `{id}`: The record ID (Required).
 - `{FIELD_NAME}`: Any field on the record (e.g., `{name}`, `{create_date.year}`, `{company_id.name}`).
 
@@ -37,10 +40,10 @@ The **Directory** field in a template supports dynamic placeholders to create a 
 
 **Example:**
 
-With a directory template of `/{res_model}/{create_date.year}/{name}`, a file attached to a partner named "Azure Interior" created in 2024 would be stored at:
+With a directory template of `/{res_model}/{create_date.year}/{name} ({id})`, a file attached to a partner named "Azure Interior" created in 2024 would be stored at:
 
 ```
-/res.partner/2024/Azure Interior/99_contract.pdf
+/res.partner/2024/Azure Interior (99)/99_contract.pdf
 ```
 
 The filename is automatically prefixed with the attachment ID to prevent conflicts.
@@ -48,16 +51,18 @@ The filename is automatically prefixed with the attachment ID to prevent conflic
 ### Bidirectional Sync
 
 If **Bidirectional Sync** is enabled on a Storage Template, Cloudlink will monitor the folder associated with a record.
-
 - When a user opens a record in Odoo, Cloudlink checks the corresponding folder on the drive.
 - Any new files found in that folder are automatically imported into Odoo as attachments.
 - A notification is sent to the user upon completion.
 
 This allows for seamless workflows where files are dropped into a folder (e.g., via FTP or shared drive) and immediately appear in Odoo.
 
+{: .tip }
+To move existing attachments to the Filestore, see the guide: [Move existing attachments].
+
 ## Filestore Settings
 
-![Filestore Settings](assets/filestore_settings.png)
+![Filestore Settings](../assets/filestore_settings.png)
 
 ### Name
 
@@ -93,3 +98,4 @@ Determines the order in which Filestores are matched. Lower numbers have higher 
 - When an attachment is deleted in Odoo, the file is also removed from the cloud drive.
 
 [Cloudlink Drive]: {% link drives.md %}
+[Move existing attachments]: {% link how-to/move-attachments.md %}

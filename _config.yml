@@ -8,6 +8,9 @@ aux_links:
   # Docs on Github: https://github.com/abichinger/odoo_cloud_link_docs
   Odoo App Store: https://apps.odoo.com/apps/modules/18.0/cloud_link
 
+plugins:
+  - jekyll-redirect-from
+
 callouts:
   highlight:
     color: yellow
