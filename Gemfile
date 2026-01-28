@@ -14,3 +14,6 @@ gem "json"
 gem "csv"
 
 gem "nokogiri"
+
+# https://github.com/jekyll/jekyll-redirect-from
+gem 'jekyll-redirect-from'

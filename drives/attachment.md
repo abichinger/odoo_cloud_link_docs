@@ -74,6 +74,6 @@ To simplify the setup the module provides some `Attachment Folder` presets.
 
 ---
 
-[Sync Job]: {% link sync.md %}
+[Sync Job]: {% link how-to/sync.md %}
 [Domain]: https://www.odoo.com/documentation/{{site.content.version}}/developer/reference/backend/orm.html#reference-orm-domains
 

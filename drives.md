@@ -1,17 +1,16 @@
 ---
 title: Drives
 layout: default
-nav_order: 30
+nav_order: 4
 has_children: true
 ---
 
-# Drives
+# Drive Types
 
-[Cloudlink] supports various data storages that can be mounted as drives. You can create multiple drives of the same type.
-
-![Cloudlink Drives](assets/drives.png)
+Cloudlink supports a wide range of storage providers. Each provider is integrated as a "Drive" type.
+You can mount multiple drives of different types simultaneously.
 
 {: .note }
-Some drives require a Cloudlink extension. Select a drive type for more information.
+Most drive types require installing an extension module.
 
-[Cloudlink]: {% link index.md %}
+Select a drive type from the menu to learn more about its configuration and features.
