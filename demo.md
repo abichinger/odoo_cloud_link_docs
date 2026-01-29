@@ -6,7 +6,7 @@ nav_order: 2
 
 # Demo
 
-You can try out Cloudlink on our public demo instance.
+You can try out Cloudlink on our public demo instance running Odoo 19.0. The features of the modules are identical to version 18.0.
 
 [Open Demo Instance](https://odoo19-cloudlink.504050.xyz/odoo/cloudlink){: .btn .btn-primary target="_blank" }
 
