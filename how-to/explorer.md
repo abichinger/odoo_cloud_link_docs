@@ -18,6 +18,11 @@ The integrated File Explorer allows you to browse and manage files across all yo
 Go to **Cloudlink > File Explorer** to open the explorer.
 You will see a list of your mounted drives on the left sidebar. Click a drive to browse its contents.
 
+**Contextual Access:**
+You can also access the File Explorer directly from Odoo records (like Partners or Sales Orders) if the **[Filestore]** is configured with the **File Explorer** option enabled. This opens a the File Explorer of the files and folders associated with that specific record.
+
+![Record-Specific File Explorer](../assets/record_file_explorer.png)
+
 ## Features & Operations
 
 ### Basic Operations
@@ -37,3 +42,6 @@ You will see a list of your mounted drives on the left sidebar. Click a drive to
 ### Navigation
 - **Breadcrumbs**: Use the top bar to navigate back up the folder hierarchy.
 - **Pinned Folders**: Pin frequently accessed folders for quick access.
+
+[Filestore]: {% link how-to/filestore.md %}
+

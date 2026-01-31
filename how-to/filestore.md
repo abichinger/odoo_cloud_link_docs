@@ -57,6 +57,19 @@ If **Bidirectional Sync** is enabled on a Storage Template, Cloudlink will monit
 
 This allows for seamless workflows where files are dropped into a folder (e.g., via FTP or shared drive) and immediately appear in Odoo.
 
+### Record-Specific File Explorer
+
+![Record-Specific File Explorer](../assets/record_file_explorer.png)
+
+You can enable a **File Explorer** directly on Odoo records (e.g., on a Customer or Sales Order).
+
+1. Enable **File Explorer** on the matching Storage Template.
+2. Go to a record of that model (e.g., a Partner).
+3. Click the **Folder** icon in the control panel (top right).
+4. A popup window opens the File Explorer, showing **only** the files and folders for that specific record.
+
+This allows users to manage files for a specific context without leaving the record workflow.
+
 {: .tip }
 To move existing attachments to the Filestore, see the guide: [Move existing attachments].
 
@@ -87,6 +100,7 @@ Define one or more templates to map Odoo models to directory structures.
 - **Model**: Restrict the template to a specific model. Leave empty to apply to all other models.
 - **Directory**: The folder path pattern (see Folder Structure).
 - **Bidirectional**: Enable two-way sync for this model.
+- **File Explorer**: Enable the file explorer interface on the record form.
 
 ### Sequence
 
