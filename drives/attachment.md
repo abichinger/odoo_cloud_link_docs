@@ -1,8 +1,12 @@
 ---
 title: Attachment
 layout: default
-parent: Drives
+# parent: Drives
+nav_exclude: true
 ---
+
+{: .highlight }
+**Removed in 19.0.2.0.0:** Attachment drives have been removed from this module and are no longer available.
 
 # Attachment Drive
 

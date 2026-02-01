@@ -28,7 +28,7 @@ Cloudlink consists of several modules. The core module provides the file manager
 
 | Feature / Provider | Module |
 | :--- | :--- |
-| **Core (File Explorer, Attachment, Local)** | `cloud_link` |
+| **Core (File Explorer, Filestore, Local drives)** | `cloud_link` |
 | **URL Attachments** | `cloud_link_attach` |
 | **Database Backup** | `cloud_link_db` |
 | **Dropbox** | `cloud_link_dropbox` |
