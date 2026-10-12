@@ -8,7 +8,7 @@ nav_order: 2
 
 You can try out Cloudlink on our public demo instance.
 
-[Open Demo Instance](https://odoo19-cloudlink.504050.xyz/odoo/cloudlink){: .btn .btn-primary target="_blank" }
+[Open Demo Instance](https://odoo20-cloudlink.504050.xyz/odoo/cloudlink){: .btn .btn-primary target="_blank" }
 
 {: .note }
 The demo instance is reset every few hours.

@@ -7,7 +7,7 @@ url: https://abichinger.github.io
 aux_links:
   # Docs on Github: https://github.com/abichinger/odoo_cloud_link_docs
   # '18.0': https://abichinger.github.io/odoo_cloud_link_docs/18.0/
-  Odoo App Store: https://apps.odoo.com/apps/modules/19.0/cloud_link
+  Odoo App Store: https://apps.odoo.com/apps/modules/20.0/cloud_link
 
 plugins:
   - jekyll-redirect-from
@@ -29,7 +29,7 @@ callouts:
     color: red
 
 content:
-  version: "19.0"
+  version: "20.0"
   module_name:
     base: Cloudlink - Storage
     gdrive: Cloudlink - Google Drive
